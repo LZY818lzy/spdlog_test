@@ -30,13 +30,11 @@ add_subdirectory(subproject1)
 add_subdirectory(subproject2)
 add_subdirectory(subproject3)
 
+# 用了CACHE后在构建子项目时会找不到变量SPDLOG_LIBRARY，所以注释掉，然后挪到了上面
 # ===== spdlog 路径配置（可在 configure 时覆盖） =====
 #set(SPDLOG_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/common_include" CACHE PATH "spdlog include directory")
 #set(SPDLOG_LIB_DIR     "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "spdlog library directory")
-# 如果你有静态库libspdlog.a
 #set(SPDLOG_LIBRARY "${SPDLOG_LIB_DIR}/libspdlog.a" CACHE FILEPATH "spdlog static library path")
-# 如果使用动态库（windows 下可能是 spdlog.lib），你可以改为：
-# set(SPDLOG_LIBRARY "${SPDLOG_LIB_DIR}/spdlog.lib" CACHE FILEPATH "spdlog import library path")
 
 message(STATUS "spdlog 头文件: ${SPDLOG_INCLUDE_DIR}")
 message(STATUS "spdlog 库: ${SPDLOG_LIBRARY}")
