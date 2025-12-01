@@ -8,6 +8,12 @@
     {
         "CMAKE_EXPORT_COMPILE_COMMANDS": true
     },
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.preferredGenerators": [
+        "MinGW Makefiles",
+        "Unix Makefiles",
+        "Ninja"
+    ],
 
     //CMake Tools扩展和C/C++扩展的桥梁 
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",

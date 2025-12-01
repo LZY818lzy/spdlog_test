@@ -27,7 +27,7 @@
         {
             "label": "configure-cmake",
             "type": "shell",
-            "command": "cmake",
+            "command": "E:/Program Files/CMake/bin/cmake.exe",  // 替换为你的 MinGW cmake 路径
             "args":
              [
                 "-B","${workspaceFolder}/build",

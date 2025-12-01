@@ -11,14 +11,22 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME}
     PRIVATE 
         ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/spdlog/include
+        ${SPDLOG_INCLUDE_DIR}
     PUBLIC
         ${COMMON_INCLUDE_DIR}
 )
+
+target_compile_definitions(${PROJECT_NAME} PRIVATE SPDLOG_COMPILED_LIB)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${SPDLOG_LIBRARY})
 
 # 可选：设置可执行文件属性
 set_target_properties(${PROJECT_NAME} PROPERTIES
     OUTPUT_NAME "subproject1"  # 确保输出名称一致
 )
+
+# 可选：检查库文件是否存在
+if(NOT EXISTS ${SPDLOG_LIBRARY})
+    message(WARNING "spdlog library not found at: ${SPDLOG_LIBRARY}")
+endif()
 
 message(STATUS "${PROJECT_NAME} 配置完成: ${PROJECT_NAME}")

@@ -1,8 +1,8 @@
 subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/spdlog.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/common.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/null_mutex.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/spdlog.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/common.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/null_mutex.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/version.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -32,7 +32,7 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_pair.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/utility.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/tweakme.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/tweakme.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
@@ -163,12 +163,12 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/fmt/fmt.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/fmt/bundled/format.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/fmt/bundled/base.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/fmt/fmt.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/fmt/bundled/format.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/fmt/bundled/base.h \
  E:/mingw64/x86_64-w64-mingw32/include/string.h \
  E:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/fmt/bundled/format.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/fmt/bundled/format.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
  E:/mingw64/x86_64-w64-mingw32/include/math.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
@@ -188,7 +188,7 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/system_error \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/fmt/bundled/format-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/fmt/bundled/format-inl.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
@@ -216,11 +216,11 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/common-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/common-inl.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stream_iterator.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/registry.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/periodic_worker.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/registry.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/periodic_worker.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/condition_variable \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_lock.h \
@@ -228,21 +228,21 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/thread \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_thread.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/this_thread_sleep.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/periodic_worker-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/registry-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/logger.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/backtracer.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/circular_q.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/periodic_worker-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/registry-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/logger.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/backtracer.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/circular_q.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
  E:/mingw64/x86_64-w64-mingw32/include/assert.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/log_msg_buffer.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/log_msg.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/log_msg-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/os.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/os-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/log_msg_buffer.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/log_msg.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/log_msg-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/os.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/os-inl.h \
  E:/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
  E:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/windows_include.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/windows_include.h \
  E:/mingw64/x86_64-w64-mingw32/include/windows.h \
  E:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
  E:/mingw64/x86_64-w64-mingw32/include/excpt.h \
@@ -449,23 +449,23 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: \
  E:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
  E:/mingw64/x86_64-w64-mingw32/include/share.h \
  E:/mingw64/x86_64-w64-mingw32/include/direct.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/log_msg_buffer-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/backtracer-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/logger-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/pattern_formatter.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/formatter.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/pattern_formatter-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/fmt_helper.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/mdc.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/log_msg_buffer-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/backtracer-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/logger-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/pattern_formatter.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/formatter.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/pattern_formatter-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/fmt_helper.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/mdc.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tree.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h \
  E:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/sinks/sink.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/sinks/sink-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/sinks/wincolor_sink.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/console_globals.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/sinks/wincolor_sink-inl.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/details/synchronous_factory.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/version.h \
- E:/Code/vscode_Projects/spdlog_test/subproject1/spdlog/include/spdlog/spdlog-inl.h
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/sinks/sink.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/sinks/sink-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/sinks/wincolor_sink.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/console_globals.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/sinks/wincolor_sink-inl.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/details/synchronous_factory.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/version.h \
+ E:/Code/vscode_Projects/spdlog_test/common_include/spdlog/spdlog-inl.h
