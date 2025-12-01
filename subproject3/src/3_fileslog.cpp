@@ -103,7 +103,7 @@ void test_daily_log() {
     try {
         // 定义固定的轮换时间点
         const int rotation_hour = 15;
-        const int rotation_minute = 30;
+        const int rotation_minute = 57;
 
         // 强制 spdlog 在遇到任何内部错误时，将错误信息打印到控制台
         spdlog::set_error_handler([](const std::string& msg) {
@@ -127,7 +127,7 @@ void test_daily_log() {
         std::cout << "-----------------------------------------------" << std::endl;
 
         // 2. 记录初始日志 (文件生成)
-        for (int i = 0; i < 10; ++i) { 
+        for (int i = 0; i < 100000; ++i) { 
 
             logger->info("初始日志 (轮换前) - 运行次数: {}", i);
             std::this_thread::sleep_for(std::chrono::milliseconds(200));; 
