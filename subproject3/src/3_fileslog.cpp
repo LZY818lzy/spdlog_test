@@ -1,3 +1,8 @@
+#ifdef _WIN32
+#include <io.h>
+#include <fcntl.h>
+#include <windows.h>  // 添加这行，用于 SetConsoleOutputCP 和 CP_UTF8
+#endif
 //基础文件日志测试
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/basic_file_sink.h"
@@ -102,8 +107,8 @@ void test_rotating_log_with_sleep() {
 void test_daily_log() {
     try {
         // 定义固定的轮换时间点
-        const int rotation_hour = 15;
-        const int rotation_minute = 57;
+        const int rotation_hour = 10;
+        const int rotation_minute = 1;
 
         // 强制 spdlog 在遇到任何内部错误时，将错误信息打印到控制台
         spdlog::set_error_handler([](const std::string& msg) {
@@ -130,7 +135,7 @@ void test_daily_log() {
         for (int i = 0; i < 100000; ++i) { 
 
             logger->info("初始日志 (轮换前) - 运行次数: {}", i);
-            std::this_thread::sleep_for(std::chrono::milliseconds(200));; 
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));; 
         }
         logger->flush();
         
@@ -160,6 +165,14 @@ void test_daily_log() {
 }
 
 int main() {
+#ifdef _WIN32
+    // 设置控制台为 UTF-8 模式
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    // 可选：允许控制台输出 UTF-8 字符
+    //std::cout.imbue(std::locale(""));
+#endif
+
     test_daily_log();
     return 0;
 }
