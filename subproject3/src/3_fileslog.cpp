@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <windows.h>  // 添加这行，用于 SetConsoleOutputCP 和 CP_UTF8
 #endif
+
 //基础文件日志测试
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/basic_file_sink.h"
@@ -165,12 +166,12 @@ void test_daily_log() {
 }
 
 int main() {
+//Windows 控制台乱码是因为 UTF-8 编码的源文件中的中文字符与控制台的默认编码（GBK/CP936）不匹配。
+//解决方案：在程序启动时设置控制台为 UTF-8 模式
 #ifdef _WIN32
     // 设置控制台为 UTF-8 模式
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-    // 可选：允许控制台输出 UTF-8 字符
-    //std::cout.imbue(std::locale(""));
 #endif
 
     test_daily_log();
