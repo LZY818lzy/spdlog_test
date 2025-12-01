@@ -27,6 +27,8 @@ events:
     names:
       - "mingw32-make.exe"
     candidate_directories:
+      - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -38,7 +40,6 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
       - "E:/Program Files/Git/cmd/"
-      - "E:/mingw64/bin/"
       - "E:/software/CMake/bin/"
       - "E:/Program Files/CMake/bin/"
       - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
@@ -48,366 +49,40 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
       - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/mingw32-make.exe.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/mingw32-make.exe"
-      - "C:/Windows/System32/mingw32-make.exe.com"
-      - "C:/Windows/System32/mingw32-make.exe"
-      - "C:/Windows/mingw32-make.exe.com"
-      - "C:/Windows/mingw32-make.exe"
-      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
-      - "C:/Windows/System32/wbem/mingw32-make.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
-      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
-      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
-      - "C:/Program Files/CMITControlCenter/mingw32-make.exe.com"
-      - "C:/Program Files/CMITControlCenter/mingw32-make.exe"
-      - "C:/Program Files/dotnet/mingw32-make.exe.com"
-      - "C:/Program Files/dotnet/mingw32-make.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mingw32-make.exe.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mingw32-make.exe"
-      - "E:/Program Files/Git/cmd/mingw32-make.exe.com"
-      - "E:/Program Files/Git/cmd/mingw32-make.exe"
       - "E:/mingw64/bin/mingw32-make.exe.com"
     found: "E:/mingw64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
-        - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
-        - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
-      - "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER"
-    description: "C compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "cc"
-      - "gcc"
-      - "cl"
-      - "bcc"
-      - "xlc"
-      - "icx"
-      - "clang"
-    candidate_directories:
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/CMITControlCenter/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
-      - "E:/Program Files/Git/cmd/"
-      - "E:/mingw64/bin/"
-      - "E:/software/CMake/bin/"
-      - "E:/Program Files/CMake/bin/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/User/.dotnet/tools/"
-      - "E:/Microsoft VS Code/bin/"
-      - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-    searched_directories:
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cc.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cc.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cc"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cl.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cl.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/cl"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/bcc.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/bcc.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/bcc"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/xlc.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/xlc.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/xlc"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/icx.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/icx.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/icx"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/clang.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/clang.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/clang"
-      - "C:/Windows/System32/cc.com"
-      - "C:/Windows/System32/cc.exe"
-      - "C:/Windows/System32/cc"
-      - "C:/Windows/System32/gcc.com"
-      - "C:/Windows/System32/gcc.exe"
-      - "C:/Windows/System32/gcc"
-      - "C:/Windows/System32/cl.com"
-      - "C:/Windows/System32/cl.exe"
-      - "C:/Windows/System32/cl"
-      - "C:/Windows/System32/bcc.com"
-      - "C:/Windows/System32/bcc.exe"
-      - "C:/Windows/System32/bcc"
-      - "C:/Windows/System32/xlc.com"
-      - "C:/Windows/System32/xlc.exe"
-      - "C:/Windows/System32/xlc"
-      - "C:/Windows/System32/icx.com"
-      - "C:/Windows/System32/icx.exe"
-      - "C:/Windows/System32/icx"
-      - "C:/Windows/System32/clang.com"
-      - "C:/Windows/System32/clang.exe"
-      - "C:/Windows/System32/clang"
-      - "C:/Windows/cc.com"
-      - "C:/Windows/cc.exe"
-      - "C:/Windows/cc"
-      - "C:/Windows/gcc.com"
-      - "C:/Windows/gcc.exe"
-      - "C:/Windows/gcc"
-      - "C:/Windows/cl.com"
-      - "C:/Windows/cl.exe"
-      - "C:/Windows/cl"
-      - "C:/Windows/bcc.com"
-      - "C:/Windows/bcc.exe"
-      - "C:/Windows/bcc"
-      - "C:/Windows/xlc.com"
-      - "C:/Windows/xlc.exe"
-      - "C:/Windows/xlc"
-      - "C:/Windows/icx.com"
-      - "C:/Windows/icx.exe"
-      - "C:/Windows/icx"
-      - "C:/Windows/clang.com"
-      - "C:/Windows/clang.exe"
-      - "C:/Windows/clang"
-      - "C:/Windows/System32/wbem/cc.com"
-      - "C:/Windows/System32/wbem/cc.exe"
-      - "C:/Windows/System32/wbem/cc"
-      - "C:/Windows/System32/wbem/gcc.com"
-      - "C:/Windows/System32/wbem/gcc.exe"
-      - "C:/Windows/System32/wbem/gcc"
-      - "C:/Windows/System32/wbem/cl.com"
-      - "C:/Windows/System32/wbem/cl.exe"
-      - "C:/Windows/System32/wbem/cl"
-      - "C:/Windows/System32/wbem/bcc.com"
-      - "C:/Windows/System32/wbem/bcc.exe"
-      - "C:/Windows/System32/wbem/bcc"
-      - "C:/Windows/System32/wbem/xlc.com"
-      - "C:/Windows/System32/wbem/xlc.exe"
-      - "C:/Windows/System32/wbem/xlc"
-      - "C:/Windows/System32/wbem/icx.com"
-      - "C:/Windows/System32/wbem/icx.exe"
-      - "C:/Windows/System32/wbem/icx"
-      - "C:/Windows/System32/wbem/clang.com"
-      - "C:/Windows/System32/wbem/clang.exe"
-      - "C:/Windows/System32/wbem/clang"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang"
-      - "C:/Windows/System32/OpenSSH/cc.com"
-      - "C:/Windows/System32/OpenSSH/cc.exe"
-      - "C:/Windows/System32/OpenSSH/cc"
-      - "C:/Windows/System32/OpenSSH/gcc.com"
-      - "C:/Windows/System32/OpenSSH/gcc.exe"
-      - "C:/Windows/System32/OpenSSH/gcc"
-      - "C:/Windows/System32/OpenSSH/cl.com"
-      - "C:/Windows/System32/OpenSSH/cl.exe"
-      - "C:/Windows/System32/OpenSSH/cl"
-      - "C:/Windows/System32/OpenSSH/bcc.com"
-      - "C:/Windows/System32/OpenSSH/bcc.exe"
-      - "C:/Windows/System32/OpenSSH/bcc"
-      - "C:/Windows/System32/OpenSSH/xlc.com"
-      - "C:/Windows/System32/OpenSSH/xlc.exe"
-      - "C:/Windows/System32/OpenSSH/xlc"
-      - "C:/Windows/System32/OpenSSH/icx.com"
-      - "C:/Windows/System32/OpenSSH/icx.exe"
-      - "C:/Windows/System32/OpenSSH/icx"
-      - "C:/Windows/System32/OpenSSH/clang.com"
-      - "C:/Windows/System32/OpenSSH/clang.exe"
-      - "C:/Windows/System32/OpenSSH/clang"
-      - "C:/Program Files/CMITControlCenter/cc.com"
-      - "C:/Program Files/CMITControlCenter/cc.exe"
-      - "C:/Program Files/CMITControlCenter/cc"
-      - "C:/Program Files/CMITControlCenter/gcc.com"
-      - "C:/Program Files/CMITControlCenter/gcc.exe"
-      - "C:/Program Files/CMITControlCenter/gcc"
-      - "C:/Program Files/CMITControlCenter/cl.com"
-      - "C:/Program Files/CMITControlCenter/cl.exe"
-      - "C:/Program Files/CMITControlCenter/cl"
-      - "C:/Program Files/CMITControlCenter/bcc.com"
-      - "C:/Program Files/CMITControlCenter/bcc.exe"
-      - "C:/Program Files/CMITControlCenter/bcc"
-      - "C:/Program Files/CMITControlCenter/xlc.com"
-      - "C:/Program Files/CMITControlCenter/xlc.exe"
-      - "C:/Program Files/CMITControlCenter/xlc"
-      - "C:/Program Files/CMITControlCenter/icx.com"
-      - "C:/Program Files/CMITControlCenter/icx.exe"
-      - "C:/Program Files/CMITControlCenter/icx"
-      - "C:/Program Files/CMITControlCenter/clang.com"
-      - "C:/Program Files/CMITControlCenter/clang.exe"
-      - "C:/Program Files/CMITControlCenter/clang"
-      - "C:/Program Files/dotnet/cc.com"
-      - "C:/Program Files/dotnet/cc.exe"
-      - "C:/Program Files/dotnet/cc"
-      - "C:/Program Files/dotnet/gcc.com"
-      - "C:/Program Files/dotnet/gcc.exe"
-      - "C:/Program Files/dotnet/gcc"
-      - "C:/Program Files/dotnet/cl.com"
-      - "C:/Program Files/dotnet/cl.exe"
-      - "C:/Program Files/dotnet/cl"
-      - "C:/Program Files/dotnet/bcc.com"
-      - "C:/Program Files/dotnet/bcc.exe"
-      - "C:/Program Files/dotnet/bcc"
-      - "C:/Program Files/dotnet/xlc.com"
-      - "C:/Program Files/dotnet/xlc.exe"
-      - "C:/Program Files/dotnet/xlc"
-      - "C:/Program Files/dotnet/icx.com"
-      - "C:/Program Files/dotnet/icx.exe"
-      - "C:/Program Files/dotnet/icx"
-      - "C:/Program Files/dotnet/clang.com"
-      - "C:/Program Files/dotnet/clang.exe"
-      - "C:/Program Files/dotnet/clang"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/cl"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/bcc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/xlc.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/xlc.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/xlc"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/icx"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/clang"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cc.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cc.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cc"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/gcc.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/gcc.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/gcc"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cl.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cl.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/cl"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/bcc.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/bcc.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/bcc"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/xlc.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/xlc.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/xlc"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/icx.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/icx.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/icx"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/clang.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/clang.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/clang"
-      - "E:/Program Files/Git/cmd/cc.com"
-      - "E:/Program Files/Git/cmd/cc.exe"
-      - "E:/Program Files/Git/cmd/cc"
-      - "E:/Program Files/Git/cmd/gcc.com"
-      - "E:/Program Files/Git/cmd/gcc.exe"
-      - "E:/Program Files/Git/cmd/gcc"
-      - "E:/Program Files/Git/cmd/cl.com"
-      - "E:/Program Files/Git/cmd/cl.exe"
-      - "E:/Program Files/Git/cmd/cl"
-      - "E:/Program Files/Git/cmd/bcc.com"
-      - "E:/Program Files/Git/cmd/bcc.exe"
-      - "E:/Program Files/Git/cmd/bcc"
-      - "E:/Program Files/Git/cmd/xlc.com"
-      - "E:/Program Files/Git/cmd/xlc.exe"
-      - "E:/Program Files/Git/cmd/xlc"
-      - "E:/Program Files/Git/cmd/icx.com"
-      - "E:/Program Files/Git/cmd/icx.exe"
-      - "E:/Program Files/Git/cmd/icx"
-      - "E:/Program Files/Git/cmd/clang.com"
-      - "E:/Program Files/Git/cmd/clang.exe"
-      - "E:/Program Files/Git/cmd/clang"
-      - "E:/mingw64/bin/cc.com"
-    found: "E:/mingw64/bin/cc.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -435,28 +110,31 @@ events:
     found: "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -466,7 +144,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: E:/mingw64/bin/cc.exe 
+      Compiler: E:/mingw64/bin/gcc.exe 
       Build flags: 
       Id flags:  
       
@@ -500,6 +178,7 @@ events:
       - "ar"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -520,34 +199,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/ar.com"
     found: "E:/mingw64/bin/ar.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -569,6 +250,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -589,34 +271,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/ranlib.com"
     found: "E:/mingw64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -638,6 +322,7 @@ events:
       - "strip"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -658,34 +343,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/strip.com"
     found: "E:/mingw64/bin/strip.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -707,6 +394,7 @@ events:
       - "ld"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -727,34 +415,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/ld.com"
     found: "E:/mingw64/bin/ld.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -776,6 +466,7 @@ events:
       - "nm"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -796,34 +487,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/nm.com"
     found: "E:/mingw64/bin/nm.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -845,6 +538,7 @@ events:
       - "objdump"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -865,34 +559,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/objdump.com"
     found: "E:/mingw64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -914,6 +610,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -934,34 +631,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/objcopy.com"
     found: "E:/mingw64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -983,6 +682,7 @@ events:
       - "readelf"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1003,34 +703,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/readelf.com"
     found: "E:/mingw64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1052,6 +754,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1072,34 +775,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/dlltool.com"
     found: "E:/mingw64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1121,6 +826,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1141,34 +847,36 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/addr2line.com"
     found: "E:/mingw64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1190,6 +898,7 @@ events:
       - "tapi"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1210,11 +919,13 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/tapi.com"
       - "E:/mingw64/bin/tapi.exe"
       - "E:/mingw64/bin/tapi"
+      - "E:/usr/bin/tapi.com"
+      - "E:/usr/bin/tapi.exe"
+      - "E:/usr/bin/tapi"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/tapi.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/tapi.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/tapi"
@@ -1275,34 +986,34 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/tapi.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/tapi.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/tapi"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1327,6 +1038,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1347,11 +1059,13 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/gcc-ar-15.2.com"
       - "E:/mingw64/bin/gcc-ar-15.2.exe"
       - "E:/mingw64/bin/gcc-ar-15.2"
+      - "E:/usr/bin/gcc-ar-15.2.com"
+      - "E:/usr/bin/gcc-ar-15.2.exe"
+      - "E:/usr/bin/gcc-ar-15.2"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2"
@@ -1412,12 +1126,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "E:/mingw64/bin/gcc-ar-15.com"
       - "E:/mingw64/bin/gcc-ar-15.exe"
       - "E:/mingw64/bin/gcc-ar-15"
+      - "E:/usr/bin/gcc-ar-15.com"
+      - "E:/usr/bin/gcc-ar-15.exe"
+      - "E:/usr/bin/gcc-ar-15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15"
@@ -1478,12 +1192,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "E:/mingw64/bin/gcc-ar15.com"
       - "E:/mingw64/bin/gcc-ar15.exe"
       - "E:/mingw64/bin/gcc-ar15"
+      - "E:/usr/bin/gcc-ar15.com"
+      - "E:/usr/bin/gcc-ar15.exe"
+      - "E:/usr/bin/gcc-ar15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15"
@@ -1544,35 +1258,35 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "E:/mingw64/bin/gcc-ar.com"
     found: "E:/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1597,6 +1311,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1617,11 +1332,13 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/gcc-ranlib-15.2.com"
       - "E:/mingw64/bin/gcc-ranlib-15.2.exe"
       - "E:/mingw64/bin/gcc-ranlib-15.2"
+      - "E:/usr/bin/gcc-ranlib-15.2.com"
+      - "E:/usr/bin/gcc-ranlib-15.2.exe"
+      - "E:/usr/bin/gcc-ranlib-15.2"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2"
@@ -1682,12 +1399,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "E:/mingw64/bin/gcc-ranlib-15.com"
       - "E:/mingw64/bin/gcc-ranlib-15.exe"
       - "E:/mingw64/bin/gcc-ranlib-15"
+      - "E:/usr/bin/gcc-ranlib-15.com"
+      - "E:/usr/bin/gcc-ranlib-15.exe"
+      - "E:/usr/bin/gcc-ranlib-15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15"
@@ -1748,12 +1465,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "E:/mingw64/bin/gcc-ranlib15.com"
       - "E:/mingw64/bin/gcc-ranlib15.exe"
       - "E:/mingw64/bin/gcc-ranlib15"
+      - "E:/usr/bin/gcc-ranlib15.com"
+      - "E:/usr/bin/gcc-ranlib15.exe"
+      - "E:/usr/bin/gcc-ranlib15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15"
@@ -1814,88 +1531,35 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "E:/mingw64/bin/gcc-ranlib.com"
     found: "E:/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
-        - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
-        - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
-      - "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "g++"
-      - "cl"
-      - "bcc"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "E:/mingw64/bin/"
-    searched_directories:
-      - "E:/mingw64/bin/c++.com"
-    found: "E:/mingw64/bin/c++.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1923,28 +1587,31 @@ events:
     found: "E:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1954,7 +1621,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: E:/mingw64/bin/c++.exe 
+      Compiler: E:/mingw64/bin/g++.exe 
       Build flags: 
       Id flags:  
       
@@ -1991,6 +1658,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2011,11 +1679,13 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/gcc-ar-15.2.com"
       - "E:/mingw64/bin/gcc-ar-15.2.exe"
       - "E:/mingw64/bin/gcc-ar-15.2"
+      - "E:/usr/bin/gcc-ar-15.2.com"
+      - "E:/usr/bin/gcc-ar-15.2.exe"
+      - "E:/usr/bin/gcc-ar-15.2"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.2"
@@ -2076,12 +1746,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.2"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
       - "E:/mingw64/bin/gcc-ar-15.com"
       - "E:/mingw64/bin/gcc-ar-15.exe"
       - "E:/mingw64/bin/gcc-ar-15"
+      - "E:/usr/bin/gcc-ar-15.com"
+      - "E:/usr/bin/gcc-ar-15.exe"
+      - "E:/usr/bin/gcc-ar-15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar-15"
@@ -2142,12 +1812,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar-15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
       - "E:/mingw64/bin/gcc-ar15.com"
       - "E:/mingw64/bin/gcc-ar15.exe"
       - "E:/mingw64/bin/gcc-ar15"
+      - "E:/usr/bin/gcc-ar15.com"
+      - "E:/usr/bin/gcc-ar15.exe"
+      - "E:/usr/bin/gcc-ar15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ar15"
@@ -2208,35 +1878,35 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ar15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
       - "E:/mingw64/bin/gcc-ar.com"
     found: "E:/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2261,6 +1931,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2281,11 +1952,13 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "E:/mingw64/bin/gcc-ranlib-15.2.com"
       - "E:/mingw64/bin/gcc-ranlib-15.2.exe"
       - "E:/mingw64/bin/gcc-ranlib-15.2"
+      - "E:/usr/bin/gcc-ranlib-15.2.com"
+      - "E:/usr/bin/gcc-ranlib-15.2.exe"
+      - "E:/usr/bin/gcc-ranlib-15.2"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.2"
@@ -2346,12 +2019,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.2"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
       - "E:/mingw64/bin/gcc-ranlib-15.com"
       - "E:/mingw64/bin/gcc-ranlib-15.exe"
       - "E:/mingw64/bin/gcc-ranlib-15"
+      - "E:/usr/bin/gcc-ranlib-15.com"
+      - "E:/usr/bin/gcc-ranlib-15.exe"
+      - "E:/usr/bin/gcc-ranlib-15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib-15"
@@ -2412,12 +2085,12 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib-15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
       - "E:/mingw64/bin/gcc-ranlib15.com"
       - "E:/mingw64/bin/gcc-ranlib15.exe"
       - "E:/mingw64/bin/gcc-ranlib15"
+      - "E:/usr/bin/gcc-ranlib15.com"
+      - "E:/usr/bin/gcc-ranlib15.exe"
+      - "E:/usr/bin/gcc-ranlib15"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15.com"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15.exe"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/gcc-ranlib15"
@@ -2478,35 +2151,35 @@ events:
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.com"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15.exe"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/gcc-ranlib15"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.com"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.exe"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
       - "E:/mingw64/bin/gcc-ranlib.com"
     found: "E:/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2530,6 +2203,8 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
+      - "E:/mingw64/bin/"
+      - "E:/usr/bin/"
       - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -2541,7 +2216,6 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
       - "E:/Program Files/Git/cmd/"
-      - "E:/mingw64/bin/"
       - "E:/software/CMake/bin/"
       - "E:/Program Files/CMake/bin/"
       - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
@@ -2551,7 +2225,9 @@ events:
       - "C:/Users/User/.dotnet/tools/"
       - "E:/Microsoft VS Code/bin/"
       - "C:/Users/User/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mingw64/bin/"
+      - "/mingw64/sbin/"
+      - "/mingw64/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2565,67 +2241,38 @@ events:
       - "C:/Program Files (x86)/spdlog_test/sbin/"
       - "C:/Program Files (x86)/spdlog_test/"
     searched_directories:
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/windres.com"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/windres.exe"
-      - "D:/Program Files (x86)/VMware/VMware Workstation/bin/windres"
-      - "C:/Windows/System32/windres.com"
-      - "C:/Windows/System32/windres.exe"
-      - "C:/Windows/System32/windres"
-      - "C:/Windows/windres.com"
-      - "C:/Windows/windres.exe"
-      - "C:/Windows/windres"
-      - "C:/Windows/System32/wbem/windres.com"
-      - "C:/Windows/System32/wbem/windres.exe"
-      - "C:/Windows/System32/wbem/windres"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
-      - "C:/Windows/System32/OpenSSH/windres.com"
-      - "C:/Windows/System32/OpenSSH/windres.exe"
-      - "C:/Windows/System32/OpenSSH/windres"
-      - "C:/Program Files/CMITControlCenter/windres.com"
-      - "C:/Program Files/CMITControlCenter/windres.exe"
-      - "C:/Program Files/CMITControlCenter/windres"
-      - "C:/Program Files/dotnet/windres.com"
-      - "C:/Program Files/dotnet/windres.exe"
-      - "C:/Program Files/dotnet/windres"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/windres.com"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/windres.exe"
-      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/windres"
-      - "E:/Program Files/Git/cmd/windres.com"
-      - "E:/Program Files/Git/cmd/windres.exe"
-      - "E:/Program Files/Git/cmd/windres"
       - "E:/mingw64/bin/windres.com"
     found: "E:/mingw64/bin/windres.exe"
     search_context:
       ENV{PATH}:
-        - "D:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\CMITControlCenter\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "E:\\Program Files\\Git\\cmd"
         - "E:\\mingw64\\bin"
-        - "E:\\software\\CMake\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\mingw64\\bin"
+        - "E:\\usr\\bin"
+        - "D:/Program Files (x86)/VMware/VMware Workstation/bin/"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/CMITControlCenter/"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "E:/Program Files/Git/cmd"
+        - "E:\\mingw64\\bin"
+        - "E:/software/CMake/bin"
         - "E:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python314/Scripts/"
         - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
         - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\User\\.dotnet\\tools"
+        - "C:/Users/User/.dotnet/tools"
         - "E:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin"
-        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:/Users/User/AppData/Local/GitHubDesktop/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/spdlog_test"
       CMAKE_SYSTEM_PREFIX_PATH:
+        - "/mingw64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "E:/Program Files/CMake"
@@ -2639,8 +2286,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi"
-      binary: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi"
+      source: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq"
+      binary: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2649,22 +2296,22 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi'
+        Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq'
         
-        Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_6bf7e/fast
-        E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6bf7e.dir\\build.make CMakeFiles/cmTC_6bf7e.dir/build
-        mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi'
-        Building C object CMakeFiles/cmTC_6bf7e.dir/CMakeCCompilerABI.c.obj
-        E:\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_9fb35/fast
+        E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9fb35.dir\\build.make CMakeFiles/cmTC_9fb35.dir/build
+        mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq'
+        Building C object CMakeFiles/cmTC_9fb35.dir/CMakeCCompilerABI.c.obj
+        E:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
-        COLLECT_GCC=E:\\mingw64\\bin\\cc.exe
+        COLLECT_GCC=E:\\mingw64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
         Thread model: win32
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\'
-         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_6bf7e.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\cc4BaAoU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\'
+         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_9fb35.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccqEAjL4.s
         GNU C23 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.27-GMP
         
@@ -2681,16 +2328,16 @@ events:
          E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 095b29ed3549f595ba8c614f295895ef
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\'
-         E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\cc4BaAoU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\'
+         E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccqEAjL4.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../libexec/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../lib/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_6bf7e.exe
-        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6bf7e.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_9fb35.exe
+        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9fb35.dir\\link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=E:\\mingw64\\bin\\cc.exe
+        COLLECT_GCC=E:\\mingw64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
@@ -2699,16 +2346,16 @@ events:
         gcc version 15.2.0 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) 
         COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../libexec/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../lib/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf7e.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6bf7e.'
-         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccHlTCTd.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_6bf7e.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6bf7e.dir/objects.a --no-whole-archive --out-implib libcmTC_6bf7e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9fb35.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9fb35.'
+         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc5Oobdm.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_9fb35.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9fb35.dir/objects.a --no-whole-archive --out-implib libcmTC_9fb35.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccHlTCTd.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_6bf7e.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6bf7e.dir/objects.a --no-whole-archive --out-implib libcmTC_6bf7e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc5Oobdm.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_9fb35.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9fb35.dir/objects.a --no-whole-archive --out-implib libcmTC_9fb35.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf7e.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6bf7e.'
-        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6bf7e.dir/objects.a
-        E:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_6bf7e.dir/objects.a @CMakeFiles\\cmTC_6bf7e.dir\\objects1.rsp
-        E:\\mingw64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_6bf7e.dir/objects.a -Wl,--no-whole-archive -o cmTC_6bf7e.exe -Wl,--out-implib,libcmTC_6bf7e.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9fb35.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9fb35.'
+        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9fb35.dir/objects.a
+        E:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_9fb35.dir/objects.a @CMakeFiles\\cmTC_9fb35.dir\\objects1.rsp
+        E:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9fb35.dir/objects.a -Wl,--no-whole-archive -o cmTC_9fb35.exe -Wl,--out-implib,libcmTC_9fb35.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq'
         
       exitCode: 0
   -
@@ -2741,22 +2388,22 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi']
+        ignore line: [Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq']
         ignore line: []
-        ignore line: [Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_6bf7e/fast]
-        ignore line: [E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6bf7e.dir\\build.make CMakeFiles/cmTC_6bf7e.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-t335mi']
-        ignore line: [Building C object CMakeFiles/cmTC_6bf7e.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [E:\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_9fb35/fast]
+        ignore line: [E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9fb35.dir\\build.make CMakeFiles/cmTC_9fb35.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-y23pvq']
+        ignore line: [Building C object CMakeFiles/cmTC_9fb35.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [E:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\cc.exe]
+        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
         ignore line: [Thread model: win32]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (x86_64-win32-seh-rev0  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\']
-        ignore line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_6bf7e.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\cc4BaAoU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\']
+        ignore line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_9fb35.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccqEAjL4.s]
         ignore line: [GNU C23 (x86_64-win32-seh-rev0  Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2773,8 +2420,8 @@ events:
         ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 095b29ed3549f595ba8c614f295895ef]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\']
-        ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\cc4BaAoU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\']
+        ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccqEAjL4.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [E:/mingw64/bin/../libexec/gcc/]
@@ -2785,11 +2432,11 @@ events:
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6bf7e.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_6bf7e.exe]
-        ignore line: ["E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6bf7e.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9fb35.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_9fb35.exe]
+        ignore line: ["E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9fb35.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\cc.exe]
+        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
@@ -2805,13 +2452,13 @@ events:
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6bf7e.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6bf7e.']
-        link line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccHlTCTd.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_6bf7e.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6bf7e.dir/objects.a --no-whole-archive --out-implib libcmTC_6bf7e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9fb35.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9fb35.']
+        link line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc5Oobdm.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_9fb35.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9fb35.dir/objects.a --no-whole-archive --out-implib libcmTC_9fb35.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccHlTCTd.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc5Oobdm.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2834,7 +2481,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_6bf7e.exe] ==> ignore
+          arg [cmTC_9fb35.exe] ==> ignore
           arg [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2845,10 +2492,10 @@ events:
           arg [-LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_6bf7e.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_9fb35.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_6bf7e.dll.a] ==> ignore
+          arg [libcmTC_9fb35.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2930,8 +2577,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0"
-      binary: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0"
+      source: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v"
+      binary: "E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2941,22 +2588,22 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0'
+        Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v'
         
-        Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2de7d/fast
-        E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2de7d.dir\\build.make CMakeFiles/cmTC_2de7d.dir/build
-        mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0'
-        Building CXX object CMakeFiles/cmTC_2de7d.dir/CMakeCXXCompilerABI.cpp.obj
-        E:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5bb9a/fast
+        E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5bb9a.dir\\build.make CMakeFiles/cmTC_5bb9a.dir/build
+        mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v'
+        Building CXX object CMakeFiles/cmTC_5bb9a.dir/CMakeCXXCompilerABI.cpp.obj
+        E:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
-        COLLECT_GCC=E:\\mingw64\\bin\\c++.exe
+        COLLECT_GCC=E:\\mingw64\\bin\\g++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
         Thread model: win32
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\'
-         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_2de7d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccDhoivM.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\'
+         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5bb9a.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccWXTMJ7.s
         GNU C++17 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.27-GMP
         
@@ -2979,16 +2626,16 @@ events:
          E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: d36d25bbc8758db73b3fef2a044ea176
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\'
-         E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccDhoivM.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\'
+         E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccWXTMJ7.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../libexec/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../lib/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_2de7d.exe
-        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2de7d.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5bb9a.exe
+        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5bb9a.dir\\link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=E:\\mingw64\\bin\\c++.exe
+        COLLECT_GCC=E:\\mingw64\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
@@ -2997,16 +2644,16 @@ events:
         gcc version 15.2.0 (x86_64-win32-seh-rev0, Built by MinGW-Builds project) 
         COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../libexec/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;E:/mingw64/bin/../lib/gcc/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2de7d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_2de7d.'
-         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccQvBGW4.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_2de7d.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2de7d.dir/objects.a --no-whole-archive --out-implib libcmTC_2de7d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5bb9a.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5bb9a.'
+         E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc3US8an.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5bb9a.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5bb9a.dir/objects.a --no-whole-archive --out-implib libcmTC_5bb9a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccQvBGW4.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_2de7d.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2de7d.dir/objects.a --no-whole-archive --out-implib libcmTC_2de7d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc3US8an.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5bb9a.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5bb9a.dir/objects.a --no-whole-archive --out-implib libcmTC_5bb9a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2de7d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_2de7d.'
-        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2de7d.dir/objects.a
-        E:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_2de7d.dir/objects.a @CMakeFiles\\cmTC_2de7d.dir\\objects1.rsp
-        E:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_2de7d.dir/objects.a -Wl,--no-whole-archive -o cmTC_2de7d.exe -Wl,--out-implib,libcmTC_2de7d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5bb9a.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5bb9a.'
+        "E:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5bb9a.dir/objects.a
+        E:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5bb9a.dir/objects.a @CMakeFiles\\cmTC_5bb9a.dir\\objects1.rsp
+        E:\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5bb9a.dir/objects.a -Wl,--no-whole-archive -o cmTC_5bb9a.exe -Wl,--out-implib,libcmTC_5bb9a.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v'
         
       exitCode: 0
   -
@@ -3045,22 +2692,22 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0']
+        ignore line: [Change Dir: 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v']
         ignore line: []
-        ignore line: [Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2de7d/fast]
-        ignore line: [E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2de7d.dir\\build.make CMakeFiles/cmTC_2de7d.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-remhx0']
-        ignore line: [Building CXX object CMakeFiles/cmTC_2de7d.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [E:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "E:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5bb9a/fast]
+        ignore line: [E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5bb9a.dir\\build.make CMakeFiles/cmTC_5bb9a.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/CMakeScratch/TryCompile-1ksv8v']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5bb9a.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [E:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\c++.exe]
+        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
         ignore line: [Thread model: win32]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (x86_64-win32-seh-rev0  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\']
-        ignore line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_2de7d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccDhoivM.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\']
+        ignore line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT E:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5bb9a.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccWXTMJ7.s]
         ignore line: [GNU C++17 (x86_64-win32-seh-rev0  Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -3083,8 +2730,8 @@ events:
         ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d36d25bbc8758db73b3fef2a044ea176]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\']
-        ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccDhoivM.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\']
+        ignore line: [ E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccWXTMJ7.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [E:/mingw64/bin/../libexec/gcc/]
@@ -3095,11 +2742,11 @@ events:
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2de7d.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_2de7d.exe]
-        ignore line: ["E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2de7d.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5bb9a.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5bb9a.exe]
+        ignore line: ["E:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5bb9a.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\c++.exe]
+        ignore line: [COLLECT_GCC=E:\\mingw64\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../../../src/gcc-15.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev0, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
@@ -3115,13 +2762,13 @@ events:
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2de7d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_2de7d.']
-        link line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccQvBGW4.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_2de7d.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2de7d.dir/objects.a --no-whole-archive --out-implib libcmTC_2de7d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5bb9a.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5bb9a.']
+        link line: [ E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc3US8an.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1520-win32-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5bb9a.exe E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LE:/mingw64/bin/../lib/gcc -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5bb9a.dir/objects.a --no-whole-archive --out-implib libcmTC_5bb9a.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=E:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccQvBGW4.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\cc3US8an.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -3144,7 +2791,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_2de7d.exe] ==> ignore
+          arg [cmTC_5bb9a.exe] ==> ignore
           arg [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -3155,10 +2802,10 @@ events:
           arg [-LE:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [E:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_2de7d.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_5bb9a.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_2de7d.dll.a] ==> ignore
+          arg [libcmTC_5bb9a.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore

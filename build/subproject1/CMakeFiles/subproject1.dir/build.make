@@ -76,15 +76,15 @@ subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: subproject1/
 subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: E:/Code/vscode_Projects/spdlog_test/subproject1/src/1_basic_include.cpp
 subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj: subproject1/CMakeFiles/subproject1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Code\vscode_Projects\spdlog_test\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj"
-	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj -MF CMakeFiles\subproject1.dir\src\1_basic_include.cpp.obj.d -o CMakeFiles\subproject1.dir\src\1_basic_include.cpp.obj -c E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp
+	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj -MF CMakeFiles\subproject1.dir\src\1_basic_include.cpp.obj.d -o CMakeFiles\subproject1.dir\src\1_basic_include.cpp.obj -c E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp
 
 subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/subproject1.dir/src/1_basic_include.cpp.i"
-	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp > CMakeFiles\subproject1.dir\src\1_basic_include.cpp.i
+	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp > CMakeFiles\subproject1.dir\src\1_basic_include.cpp.i
 
 subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/subproject1.dir/src/1_basic_include.cpp.s"
-	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp -o CMakeFiles\subproject1.dir\src\1_basic_include.cpp.s
+	cd /d E:\Code\vscode_Projects\spdlog_test\build\subproject1 && E:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Code\vscode_Projects\spdlog_test\subproject1\src\1_basic_include.cpp -o CMakeFiles\subproject1.dir\src\1_basic_include.cpp.s
 
 # Object files for target subproject1
 subproject1_OBJECTS = \

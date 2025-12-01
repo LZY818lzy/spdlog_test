@@ -3,7 +3,7 @@
     "cmake.sourceDirectory": "${workspaceFolder}",
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.installPrefix": "${workspaceFolder}/bin",
-    "cmake.configureOnOpen": true,
+    "cmake.configureOnOpen": false,  // 关闭自动配置以避免干扰
     "cmake.configureSettings":
     {
         "CMAKE_EXPORT_COMPILE_COMMANDS": true
