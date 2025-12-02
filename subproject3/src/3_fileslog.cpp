@@ -174,7 +174,7 @@ int main() {
     SetConsoleCP(CP_UTF8);
 #endif
 
-    test_daily_log();
+    test_rotating_log_with_sleep();
     return 0;
 }
 
