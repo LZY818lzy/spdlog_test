@@ -1,38 +1,38 @@
-# CMake build directories
+# CMake build directories（CMake 构建目录）
 build/
 bin/
 
-# Compiled Object files
+# Compiled Object files（编译的目标文件）
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# Precompiled Headers（预编译头文件）
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# Compiled Dynamic libraries（编译的动态库）
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
+# Fortran module files（Fortran 模块文件）
 *.mod
 *.smod
 
-# Compiled Static libraries
+# Compiled Static libraries（编译的静态库）
 #*.lai
 #*.la
 #*.a
 #*.lib
 
-# Executables
+# Executables（可执行文件）
 *.exe
 *.out
 *.app
 
-# CMake generated files
+# CMake generated files （CMake 生成的文件）
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
@@ -45,14 +45,14 @@ Makefile.cmake
 Makefile2
 progress.marks
 
-# IDE files
+# IDE files（IDE 文件）
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS generated files
+# OS generated files（操作系统生成的文件）
 .DS_Store
 .DS_Store?
 ._*

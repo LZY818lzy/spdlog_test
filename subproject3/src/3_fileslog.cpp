@@ -4,7 +4,7 @@
 #include <windows.h>  // 添加这行，用于 SetConsoleOutputCP 和 CP_UTF8
 #endif
 
-//基础文件日志测试
+//1、基础文件日志测试
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/basic_file_sink.h"
 #include <iostream>
@@ -32,72 +32,8 @@ void test_basic_file_log() {
     }
 }
 
-// 轮转文件日志测试
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/rotating_file_sink.h"
-#include <iostream>
-#include <chrono>   // 用于时间点和持续时间
-#include <thread>   // 用于睡眠函数
 
-// 定义一个便于观察的 Log 函数
-void test_rotating_log_with_sleep() {
-    try {
-        // --- 1. 配置参数 (1 KB, 3 个备份文件) ---
-        auto max_size_test = 1024;        // 1 KB (1024 字节)
-        auto max_files_test = 3;          // 保留 3 个备份文件 (.0, .1, .2)
-        int rotation_count_target = 5;    // 目标是触发 5 次轮换
-
-        // 创建 Rotating Logger
-        auto logger = spdlog::rotating_logger_mt(
-            "test_rotating_logger",
-            "logs/rotating_test.txt", // 文件路径
-            max_size_test,
-            max_files_test
-        );
-
-        logger->set_level(spdlog::level::info);
-        // 设置简洁的日志模式，方便估算大小
-        logger->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %v");
-        
-        // --- 2. 准备日志消息和循环 ---
-        
-        // 假设每条日志消息包含时间戳和序号后大约占用 50 字节
-        // 1 KB / 50 字节 ≈ 20 条日志触发一次轮换
-        int lines_per_rotation = 20; 
-        
-        // 为了触发 5 次轮换 (需要 6 个文件大小的数据)，总共记录：
-        int total_lines_to_log = lines_per_rotation * (max_files_test + rotation_count_target); // 20 * 8 = 160 行
-        
-        std::cout << "--- 开始轮转测试 (1KB max size) ---" << std::endl;
-        std::cout << "目标轮转次数: " << rotation_count_target << std::endl;
-        std::cout << "总共要写入的日志行数: " << total_lines_to_log << std::endl;
-
-        // --- 3. 循环输出日志并睡眠 ---
-        for (int i = 0; i < total_lines_to_log; ++i) {
-            
-            // 记录日志
-            logger->info("日志行号: {} - 该行应在第 {} 行附近触发轮换", i, lines_per_rotation * (i / lines_per_rotation + 1));
-            
-            // 确保日志立即写入磁盘，方便观察
-            logger->flush(); 
-
-            // 睡眠 200 毫秒，减缓速度
-            std::this_thread::sleep_for(std::chrono::milliseconds(200));
-
-            // 每当接近轮换点时，提示用户观察文件变化
-            if (i > 0 && i % lines_per_rotation == 0) {
-                 std::cout << "--- 轮换应在此点附近触发 (行号: " << i << ") ---" << std::endl;
-            }
-        }
-        
-        std::cout << "--- 日志写入完成。请检查 'logs/rotating_test.txt' 及其备份文件。 ---" << std::endl;
-        
-    } catch (const spdlog::spdlog_ex& ex) {
-        std::cerr << "日志初始化失败: " << ex.what() << std::endl;
-    }
-}
-
-// 每日日志文件测试
+// 2、每日日志文件测试
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/daily_file_sink.h"
 #include <iostream>
@@ -108,8 +44,8 @@ void test_rotating_log_with_sleep() {
 void test_daily_log() {
     try {
         // 定义固定的轮换时间点
-        const int rotation_hour = 10;
-        const int rotation_minute = 1;
+        const int rotation_hour = 15;
+        const int rotation_minute = 35;
 
         // 强制 spdlog 在遇到任何内部错误时，将错误信息打印到控制台
         spdlog::set_error_handler([](const std::string& msg) {
@@ -133,10 +69,10 @@ void test_daily_log() {
         std::cout << "-----------------------------------------------" << std::endl;
 
         // 2. 记录初始日志 (文件生成)
-        for (int i = 0; i < 100000; ++i) { 
+        for (int i = 0; i < 10; ++i) { 
 
             logger->info("初始日志 (轮换前) - 运行次数: {}", i);
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));; 
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
         logger->flush();
         
@@ -160,6 +96,75 @@ void test_daily_log() {
         std::cout << "-----------------------------------------------" << std::endl;
         std::cout << "✅ 程序执行完毕，请检查 logs 目录下的文件。" << std::endl;
 
+    } catch (const spdlog::spdlog_ex& ex) {
+        std::cerr << "日志初始化失败: " << ex.what() << std::endl;
+    }
+}
+
+// 3、轮转文件日志测试
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/rotating_file_sink.h"
+#include <iostream>
+#include <chrono>   // 用于时间点和持续时间
+#include <thread>   // 用于睡眠函数
+
+
+void test_rotating_log_with_sleep() 
+{
+    try {
+        // --- 1. 简化的配置参数 ---
+        // 设置日志文件最大容量为 5 KB (5 * 1024 字节)
+        const size_t max_size_bytes = 5 * 1024; 
+        // 保留 3 个备份文件 (.0, .1, .2) + 1 个当前文件
+        const size_t max_files_count = 3; 
+        
+        // --- 2. 创建 Rotating Logger ---
+        auto logger = spdlog::rotating_logger_mt(
+            "simple_rotating_logger",
+            "logs/rotating_simple.txt", // 主日志文件路径
+            max_size_bytes,
+            max_files_count
+        );
+
+        logger->set_level(spdlog::level::info);
+        // 设置日志格式：时间戳 + 消息
+        logger->set_pattern("[%H:%M:%S.%e] %v");
+        
+        // 强制 spdlog 在遇到任何内部错误时，将错误信息打印到控制台
+        spdlog::set_error_handler([](const std::string& msg) {
+            std::cerr << "\n[!!! SPDLOG ERROR !!!] 轮转或文件操作失败: " << msg << std::endl;
+        });
+
+        std::cout << "--- 开始文件大小轮转测试 ---" << std::endl;
+        std::cout << "主文件: logs/rotating_simple.txt" << std::endl;
+        std::cout << "最大容量: " << max_size_bytes << " 字节 (5 KB)" << std::endl;
+        std::cout << "最大备份文件数: " << max_files_count << std::endl;
+        std::cout << "------------------------------------------" << std::endl;
+        
+        // --- 3. 循环写入日志，直到触发多次轮换 ---
+        // 目标写入 1000 行日志，以确保触发多次 5KB 的轮换
+        const int total_lines_to_log = 1000; 
+        
+        for (int i = 0; i < total_lines_to_log; ++i) {
+            std::string log_message = "日志行号: " + std::to_string(i) + " - 这是一条用来填充文件大小的示例消息。";
+            
+            logger->info(log_message);
+            
+            // 确保日志立即写入磁盘，这样轮转检查才能立即生效
+            logger->flush(); 
+
+            // 稍微等待一下，方便您观察控制台和文件变化
+            std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+            
+            // 每 100 行打印一个提示信息
+            if ((i + 1) % 100 == 0) {
+                 std::cout << "已写入 " << i + 1 << " 行日志。文件轮转可能已发生..." << std::endl;
+            }
+        }
+        
+        std::cout << "\n--- 日志写入完成 (共 " << total_lines_to_log << " 行)。 ---" << std::endl;
+        std::cout << "请检查 'logs/' 目录下的文件，应有 logs/rotating_simple.txt、.0、.1、.2 等备份文件。" << std::endl;
+        
     } catch (const spdlog::spdlog_ex& ex) {
         std::cerr << "日志初始化失败: " << ex.what() << std::endl;
     }

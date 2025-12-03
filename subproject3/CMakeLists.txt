@@ -9,16 +9,16 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # 添加头文件包含路径
 target_include_directories(${PROJECT_NAME}
-    PRIVATE 
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${SPDLOG_INCLUDE_DIR}
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include # 本地头文件路径
     PUBLIC
-        ${COMMON_INCLUDE_DIR}
+        ${COMMON_INCLUDE_DIR} # 公共头文件路径
+#        ${SPDLOG_INCLUDE_DIR} # spdlog 头文件路径
 )
 # 库的链接模式（Header-only vs. 独立编译）。
-target_compile_definitions(${PROJECT_NAME} PRIVATE SPDLOG_COMPILED_LIB)
-# 字符编码处理（解决日志文件内部的乱码和宽字符处理)
-#target_compile_definitions(${PROJECT_NAME} PRIVATE SPDLOG_WCHAR_TO_UTF8_SUPPORT)
+# 如果使用独立编译的静态库，定义 SPDLOG_COMPILED_LIB
+target_compile_definitions(${PROJECT_NAME}  PRIVATE SPDLOG_COMPILED_LIB)
+# 链接 spdlog 静态库
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SPDLOG_LIBRARY})
 
 # 可选：设置可执行文件属性
