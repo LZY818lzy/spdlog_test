@@ -1,0 +1,31 @@
+# SPDLOG 日志配置文件 (YAML格式)
+# 文件路径: config/log_config.yaml
+
+# 控制台输出配置
+console:
+  enabled: true                # 是否启用控制台输出
+  level: "info"               # 控制台输出的最低日志级别
+  pattern: "[%Y-%m-%d %H:%M:%S.%e] [%l] [%t] %v"  #日志格式模式：[年-月-日 时:分:秒.毫秒] [日志级别] [线程ID] 实际日志消息
+
+# 文件输出配置
+file:
+  enabled: true                # 是否启用文件输出
+  level: "info"               # 文件输出的最低日志级别
+  pattern: "[%Y-%m-%d %H:%M:%S.%e] [%l] [%s:%#] [%t] %v" #日志格式模式：[年-月-日 时:分:秒.毫秒] [日志级别] [源文件:行号] [线程ID] 实际日志消息
+  filename: "logs/app.log"    # 日志文件路径
+  append: true                # 是否追加到现有文件
+  immediate_flush: true       # 是否立即写入磁盘
+  
+  # 滚动策略: "size" 或 "time"
+  rotation_strategy: "size"
+  
+  # 按大小滚动配置 (当 rotation_strategy="size" 时生效)
+  size_config:
+    max_size: 5120    # 5kb (5 * 1024 )
+    max_files: 3 #最多保留3个滚动文件
+  
+  # 按时间滚动配置 (当 rotation_strategy="time" 时生效)
+  time_config:
+    schedule: "daily"    # 可选: "daily", "hourly", "minutely"
+    hour: 2              # 每天凌晨2点滚动
+    minute: 0            # 分钟

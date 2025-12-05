@@ -1,3 +1,5 @@
+# spdlog_test/CMakeLists.txt
+
 cmake_minimum_required(VERSION 3.10)
 project(spdlog_test)
 
@@ -15,24 +17,27 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 
 # 设置可执行文件输出目录
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # 设置公共头文件路径变量
 set(COMMON_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/common_include")
 
 # 在 add_subdirectory 之前设置这些变量
-# 设置 spdlog 头文件路径变量
-#set(SPDLOG_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/common_include")
+
 # 设置 spdlog 库文件路径变量
 set(SPDLOG_LIBRARY "${CMAKE_SOURCE_DIR}/lib/libspdlog.a")
+# 设置 yaml-cpp 库文件路径变量
+set(YAML_CPP_LIBRARY "${CMAKE_SOURCE_DIR}/lib/libyaml-cpp.a")
 
 
 # 添加所有子项目
 add_subdirectory(subproject1)
 add_subdirectory(subproject2)
 add_subdirectory(subproject3)
+add_subdirectory(subproject4_yaml)
 
-message(STATUS "spdlog 头文件: ${SPDLOG_INCLUDE_DIR}")
+
+message(STATUS "yaml-cpp 库: ${YAML_CPP_LIBRARY}")
 message(STATUS "spdlog 库: ${SPDLOG_LIBRARY}")
 message(STATUS "根目录 配置完成")
 message(STATUS "构建类型: ${CMAKE_BUILD_TYPE}")
