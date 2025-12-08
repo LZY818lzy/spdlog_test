@@ -3,13 +3,13 @@
     "configurations": [
 //项目 1 配置：
         {
-            "name": "Debug subProject1",
+            "name": "Debug subProject4_yaml",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/subproject1.exe",  // 添加 .exe 扩展名
+            "program": "${workspaceFolder}/build/bin/subproject4_yaml.exe",  // 添加 .exe 扩展名
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/subproject1",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",

@@ -54,7 +54,7 @@ bool SimpleLogger::createFromConfig(const std::string& config_file, spdlog::logg
                 }
                 
                 // 滚动策略
-                std::string rotation_strategy = "size";
+                std::string rotation_strategy = "size"; //设置默认值
                 if (file["rotation_strategy"]) {
                     rotation_strategy = file["rotation_strategy"].as<std::string>();
                 }
@@ -98,10 +98,11 @@ bool SimpleLogger::createFromConfig(const std::string& config_file, spdlog::logg
                 // 按大小滚动配置
                 else if(rotation_strategy == "size")
                 {
-                    
+                    //设置默认参数
                     size_t max_size = 5 * 1024 * 1024;  // 默认5MB
                     size_t max_files = 5;               // 默认5个文件
                     
+                    //从YAML配置中读取大小滚动参数
                     if (file["size_config"]) 
                     {
                         YAML::Node size_config = file["size_config"];

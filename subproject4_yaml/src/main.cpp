@@ -2,16 +2,66 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <filesystem>
+#include <fstream>
 
 #ifdef _WIN32
 #include <windows.h>
+#include <direct.h>
+#define GETCWD _getcwd
+#else
+#include <unistd.h>
+#define GETCWD getcwd
 #endif
+
+// 调试函数：打印当前环境信息
+void printDebugInfo() {
+    std::cout << "\n=== 调试信息 ===" << std::endl;
+    
+    // 获取并显示当前工作目录
+    char cwd[1024];
+    if (GETCWD(cwd, sizeof(cwd)) != nullptr) {
+        std::cout << "当前工作目录: " << cwd << std::endl;
+    } else {
+        std::cerr << "无法获取工作目录" << std::endl;
+    }
+    
+    // 显示程序路径
+    #ifdef _WIN32
+        char exe_path[MAX_PATH];
+        GetModuleFileNameA(nullptr, exe_path, MAX_PATH);
+        std::cout << "可执行文件路径: " << exe_path << std::endl;
+    #endif
+    
+    // 测试配置文件路径
+    std::vector<std::string> test_paths = {
+        "build/config/log_config.yaml",  // 从项目根目录访问 build/config
+        "../build/config/log_config.yaml", // 如果在子目录中运行
+        "config/log_config.yaml",  // 直接运行时的路径
+        std::string(cwd) + "/config/log_config.yaml"
+    };
+    
+    std::cout << "\n检查配置文件位置:" << std::endl;
+    for (const auto& path : test_paths) {
+        std::ifstream file(path);
+        if (file.good()) {
+            std::cout << "✓ 找到: " << path << std::endl;
+            file.close();
+        } else {
+            std::cout << "✗ 没有: " << path << std::endl;
+        }
+    }
+    std::cout << "================\n" << std::endl;
+}
+
 
 int main() {
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 #endif
+    
+    //printDebugInfo();
     
     std::cout << "=== 测试 ===" << std::endl;
     
@@ -20,7 +70,7 @@ int main() {
     
 
     // 从配置文件初始化日志器
-    bool success = SimpleLogger::createFromConfig("../config/log_config.yaml", logger);
+    bool success = SimpleLogger::createFromConfig("build/config/log_config.yaml", logger);
     
     if (!success) 
     {
