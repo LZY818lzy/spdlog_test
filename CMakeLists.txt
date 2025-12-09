@@ -17,7 +17,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 
 # 设置可执行文件输出目录
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 # 设置公共头文件路径变量
 set(COMMON_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/common_include")
@@ -34,7 +34,7 @@ set(YAML_CPP_LIBRARY "${CMAKE_SOURCE_DIR}/lib/libyaml-cpp.a")
 add_subdirectory(subproject1)
 add_subdirectory(subproject2)
 add_subdirectory(subproject3)
-add_subdirectory(subproject4_yaml)
+add_subdirectory(subproject4)
 
 
 message(STATUS "yaml-cpp 库: ${YAML_CPP_LIBRARY}")

@@ -1,0 +1,38 @@
+# SPDLOG 日志配置文件 (YAML格式)
+# 文件路径: config/log_config.yaml
+
+# 日志配置
+log_console: false           # 是否启用控制台输出
+level: "info"               # 文件输出的最低日志级别
+pattern: "[%Y-%m-%d %H:%M:%S.%e] [%l] [%s:%#] [%t] %v" #日志格式模式：[年-月-日 时:分:秒.毫秒] [日志级别] [源文件:行号] [线程ID] 实际日志消息
+filename: "logs/log.txt"    # 日志文件路径
+immediate_flush: true       # 是否立即写入磁盘
+
+# 滚动策略: 
+rotation_strategy: 1 # 1表示按大小滚动，2表示按时间滚动
+
+max_size: 5    # 5kb
+max_files: 3 #最多保留3个滚动文件
+
+hour: 2              # 每天凌晨2点滚动
+minute: 0            # 分钟
+
+
+#测试键值不存在的情况
+# 正常键值
+normal_string: "正常字符串"
+normal_int: 100
+normal_float: 3.1415
+normal_bool: true
+
+# 空值（键存在但值为空）
+empty_value:  # 注意：这个键存在但没有值
+
+# 类型不匹配的情况（键存在但类型错误）
+string_as_int: "这不是数字"
+bool_as_int: true
+
+# 注意：以下键不存在于配置文件中：
+# missing_key
+# non_existent
+# ghost_value

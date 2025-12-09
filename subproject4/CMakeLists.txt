@@ -1,7 +1,7 @@
 # subproject4_yaml/CMakeLists.txt
 
 #设置 PROJECT_NAME 变量为 subproject4_yaml
-project(subproject4_yaml)
+project(subproject4)
 
 # 查找源文件
 file(GLOB SOURCES "src/*.cpp")
@@ -35,17 +35,10 @@ target_link_libraries(${PROJECT_NAME} PRIVATE ${SPDLOG_LIBRARY})
 # 链接 yaml-cpp 静态库
 target_link_libraries(${PROJECT_NAME} PRIVATE ${YAML_CPP_LIBRARY})
 
-# 复制配置文件到构建目录
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/config")
-    file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/config")
-    file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/config/" 
-         DESTINATION "${CMAKE_BINARY_DIR}/config")
-    message(STATUS "配置文件已复制到: ${CMAKE_BINARY_DIR}/config")
-endif()
 
 # 可选：设置可执行文件属性
 set_target_properties(${PROJECT_NAME} PROPERTIES
-    OUTPUT_NAME "subproject4_yaml"  # 确保输出名称一致
+    OUTPUT_NAME "subproject4"  # 确保输出名称一致
 )
 
 # 可选：检查库文件是否存在
@@ -56,5 +49,4 @@ endif()
 message(STATUS "子项目 ${PROJECT_NAME} 配置完成")
 message(STATUS "源文件: ${SOURCES}")
 message(STATUS "源文件位置: ${CMAKE_CURRENT_SOURCE_DIR}/src")
-message(STATUS "可执行文件输出到: ${CMAKE_BINARY_DIR}/bin/spdlog_yaml_demo")
-message(STATUS "配置文件复制到: ${CMAKE_BINARY_DIR}/config")
+message(STATUS "可执行文件输出到: ${CMAKE_SOURCE_DIR}/bin/subproject4")
