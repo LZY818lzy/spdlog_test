@@ -60,33 +60,61 @@ public:
     }
 
     //4、获取配置项
+    //获取字符串
     std::string GetString(const char *p_itemname)
     {
-        if (config[p_itemname]) {
+      
+        return config[p_itemname].as<std::string>();
+
+    }
+    std::string GetStringDefault(const char* p_itemname, std::string default_value ) {
+        if (config[p_itemname]){
             return config[p_itemname].as<std::string>();
         }
-        return ""; 
+        return default_value;
     }
+
+    //获取整型
     int GetInt(const char *p_itemname)
+    {
+ 
+        return config[p_itemname].as<int>();
+
+    }
+    int GetIntDefault(const char *p_itemname, int default_value)
     {
         if (config[p_itemname]) {
             return config[p_itemname].as<int>();
         }
-        return 0;
+        return default_value;
     }
+
+    //获取双精度浮点型
     double GetDouble(const char *p_itemname)
     {
-        if (config[p_itemname]) {
+
         return config[p_itemname].as<double>();
-        }
-        return 0.0;
+
     }
+    double GetdoubleDefault(const char *p_itemname, double default_value)
+    {
+        if (config[p_itemname]) {
+            return config[p_itemname].as<double>();
+        }
+        return default_value;
+    }
+
+    //获取布尔型
     bool GetBool(const char *p_itemname)
+    {
+        return config[p_itemname].as<bool>();
+    }
+    bool GetBoolDefault(const char *p_itemname, bool default_value)
     {
         if (config[p_itemname]) {
             return config[p_itemname].as<bool>();
         }
-        return false;
+        return default_value;
     }
     
 private:
